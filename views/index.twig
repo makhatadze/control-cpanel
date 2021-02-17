@@ -1,0 +1,17 @@
+{% extends 'template/default.twig' %}
+{% block title %}My cPanel{% endblock %}
+{%  block desc %}Manage cPanel Your Own Way...{% endblock %}
+{% block content %}
+    <label for="">Domains</label>
+    <a href="/control-cpanel/domain/list.php" class="btn btn-block btn-success btn-md">List Domains</a>
+    <a href="/control-cpanel/domain/show.php" class="btn btn-block btn-success btn-md">Show Domains Data</a>
+    <a href="/control-cpanel/domain/addsub.php" class="btn btn-block btn-success btn-md">Add Sub Domain</a>
+    <label for="">Emails</label>
+    <a href="/control-cpanel/email/list.php" class="btn btn-block btn-success btn-md">List Email Accounts</a>
+    <a href="/control-cpanel/email/add.php" class="btn btn-block btn-success btn-md">Add An Email Account</a>
+    <a href="/control-cpanel/email/delete.php" class="btn btn-block btn-success btn-md">Delete An Email Account</a>
+    <label for="">Database</label>
+    <a href="/control-cpanel/email/list.php" class="btn btn-block btn-success btn-md">List Databases</a>
+    <a href="/control-cpanel/email/add.php" class="btn btn-block btn-success btn-md">Create Database</a>
+    <a href="/control-cpanel/email/delete.php" class="btn btn-block btn-success btn-md">Delete Database</a>
+{% endblock %}

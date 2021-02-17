@@ -7,12 +7,8 @@ session_start();
 
 
 // Twig
-$loader = new \Twig\Loader\FilesystemLoader(__DIR__, '/views');
-$twig = new \Twig\Environment($loader, [
-    'cache' => __DIR__ . '/cache',
-]);
+$loader = new \Twig\Loader\FilesystemLoader(__DIR__. '/views');
+$twig = new \Twig\Environment($loader);
 
 // cPanel
-$cPanel = new cPanel('', '', '');
-var_dump($cPanel);
-exit();
+$cPanel = new cPanel('cabinetviptrade', '(293709B13', '144.76.13.90');
